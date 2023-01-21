@@ -29,7 +29,7 @@ set(IMGUI_BACKENDS
     "backends/imgui_impl_wgpu.cpp"
     "backends/imgui_impl_win32.cpp")
 
-add_library(imgui ${IMGUI_SOURCES} ${IMGUI_BACKENDS})
+add_library(imgui ${IMGUI_SOURCES})
 
 # add include directory
 target_include_directories(imgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
