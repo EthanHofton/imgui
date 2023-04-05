@@ -12,25 +12,6 @@ set(IMGUI_SOURCES
     "imgui_tables.cpp"
     "imgui_widgets.cpp")
 
-set(IMGUI_BACKENDS
-    "backends/imgui_impl_allegro5.cpp"
-    "backends/imgui_impl_android.cpp"
-    "backends/imgui_impl_dx10.cpp"
-    "backends/imgui_impl_dx11.cpp"
-    "backends/imgui_impl_dx12.cpp"
-    "backends/imgui_impl_dx9.cpp"
-    "backends/imgui_impl_glfw.cpp"
-    "backends/imgui_impl_glut.cpp"
-    "backends/imgui_impl_opengl2.cpp"
-    "backends/imgui_impl_opengl3.cpp"
-    "backends/imgui_impl_sdl.cpp"
-    "backends/imgui_impl_sdlrenderer.cpp"
-    "backends/imgui_impl_vulkan.cpp"
-    "backends/imgui_impl_wgpu.cpp"
-    "backends/imgui_impl_win32.cpp")
-
+# imgui lib
 add_library(imgui ${IMGUI_SOURCES})
-
-# add include directory
 target_include_directories(imgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
-target_include_directories(imgui PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/backends)
