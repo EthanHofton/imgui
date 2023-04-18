@@ -10,7 +10,8 @@ set(IMGUI_SOURCES
     "imgui_demo.cpp"
     "imgui_draw.cpp"
     "imgui_tables.cpp"
-    "imgui_widgets.cpp")
+    "imgui_widgets.cpp"
+    "misc/cpp/imgui_stdlib.cpp")
 
 # imgui lib
 add_library(imgui ${IMGUI_SOURCES})
